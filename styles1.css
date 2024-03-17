@@ -8,10 +8,12 @@ body {
     justify-content: center;
   }
   
- /* Navbar styles */
+/* Navbar styles */
+/* Navbar styles */
 #navbar {
     background-color: #909497;
-    padding: 15px 0; /* Decreased padding */
+    padding: 25px 0; 
+
     width: 100%; 
     position: fixed; 
     top: 0; 
@@ -19,60 +21,73 @@ body {
     display: flex; /* Use flexbox for layout */
     justify-content: space-between; /* Distribute items evenly */
     align-items: center; /* Center vertically */
-  }
-  
-  #navbar ul {
+}
+
+#navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex; /* Use flexbox for layout */
-  }
-  
-  #navbar ul li {
+}
+
+#navbar ul li {
     margin: 0 10px; /* Add spacing between links */
-  }
-  
-  #navbar ul li a {
-    color: #fff;
+}
+
+#navbar ul li a {
+    color: #ffffff; /* Link color */
     text-decoration: none;
+    /* padding: 10px 20px; */
     padding: 10px 20px;
     transition: background-color 0.3s;
-  }
-  
-  #navbar ul li a:hover {
-    background-color: #555;
-  }
+}
 
-  #menu-icon {
-    
+#navbar ul li a:hover {
+    background-color: #555; /* Hover background color */
+}
+
+#navbar h1 {
+    color: #ffcc00; /* Text color */
+    margin-left: 10px; /* Adjust margin for better alignment */
+}
+
+#menu-icon {
+    color: #ffcc00; /* Menu icon color */
     display: none;
     cursor: pointer;
-  }
-  
-  /* Media query for mobile responsiveness */
-  @media screen and (max-width: 600px) {
+}
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 600px) {
     #navbar {
-      padding: 10px 0; /* Decreased padding */
+        padding: 10px 0; /* Decreased padding */
     }
-  
+
     #navbar ul {
-      display: none; /* Hide the links by default */
-      flex-direction: column; /* Stack links vertically */
-      align-items: flex-start; /* Align links to the left */
+        display: none; /* Hide the links by default */
+        flex-direction: row; /* Stack links vertically */
+        align-items: flex-end;
     }
-  
+
     #navbar ul li {
-      margin: 5px 0; /* Adjusted margin */
+        margin: 5px 0; /* Adjusted margin */
     }
-  
+
+    .left-align {
+        margin-right: auto; /* Move left-aligned link to the left */
+    }
+
     .right-align {
-      margin-left: auto; /* Move links to the right */
+        margin-left: auto; /* Move right-aligned links to the right */
     }
 
     #menu-icon {
-      display: block; /* Display the menu icon */
+        display: block; /* Display the menu icon */
     }
-  }
+}
+
+
+
   
   .section-wrapper{
     margin-top: 6rem;

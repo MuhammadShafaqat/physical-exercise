@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var ul = navbar.querySelector('ul');
         if (ul.style.display === 'none' || ul.style.display === '') {
             ul.style.display = 'flex';
-            ul.style.marginRight = '7rem'           
+            ul.style.marginRight = '3rem'           
             moveElementsDown();
         } else {
             ul.style.display = 'none';
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function moveElementsDown() {
         // topButton.style.marginTop = navbar.offsetHeight + 'px';
-        topButton.style.marginTop =  '60px';
+        topButton.style.marginTop =  '0px';
         sections.forEach(function(section) {
             section.style.marginTop = navbar.offsetHeight + 'px';
         });
