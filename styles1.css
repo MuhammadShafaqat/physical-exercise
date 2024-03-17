@@ -95,12 +95,18 @@ body {
     .section {
         background-size: cover; /* Cover the entire background area */
     }
+    ul{
+        font-size: 10px;
+    }
 }
 
 /* Medium screens (tablets) */
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .section {
         background-size: auto cover; /* Adjust the size as needed */
+    }
+    ul{
+        font-size: 10px;
     }
 }
 
