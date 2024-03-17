@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ /* Navbar styles */
+#navbar {
+    background-color: #909497;
+    padding: 15px 0; /* Decreased padding */
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    z-index: 1000;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Center vertically */
+  }
+  
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for layout */
+  }
+  
+  #navbar ul li {
+    margin: 0 10px; /* Add spacing between links */
+  }
+  
+  #navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  }
+  
+  #navbar ul li a:hover {
+    background-color: #555;
+  }
+
+  #menu-icon {
+    
+    display: none;
+    cursor: pointer;
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media screen and (max-width: 600px) {
+    #navbar {
+      padding: 10px 0; /* Decreased padding */
+    }
+  
+    #navbar ul {
+      display: none; /* Hide the links by default */
+      flex-direction: column; /* Stack links vertically */
+      align-items: flex-start; /* Align links to the left */
+    }
+  
+    #navbar ul li {
+      margin: 5px 0; /* Adjusted margin */
+    }
+  
+    .right-align {
+      margin-left: auto; /* Move links to the right */
+    }
+
+    #menu-icon {
+      display: block; /* Display the menu icon */
+    }
+  }
+  
+  .section-wrapper{
+    margin-top: 6rem;
+    position: relative;
+  }
+  .section {
+    margin: 2rem;
+    padding: 50px;
+    background-image: url("./image-1.jpeg");
+    background-size: cover; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+/* Small screens (phones) */
+@media screen and (max-width: 576px) {
+    .section {
+        background-size: cover; /* Cover the entire background area */
+    }
+}
+
+/* Medium screens (tablets) */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .section {
+        background-size: auto cover; /* Adjust the size as needed */
+    }
+}
+
+/* Large screens (desktops, laptops) */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .section {
+        background-size: auto cover; /* Adjust the size as needed */
+    }
+}
+
+/* Extra large screens (large desktops, large laptops) */
+@media screen and (min-width: 1201px) {
+    .section {
+        background-size: auto cover; /* Adjust the size as needed */
+    }
+}
+/* button orientation  */
+
+.top-button{   
+    background-color: #97E533;
+    border: none;
+     padding: 10px 20px;
+     cursor: pointer;
+     position: absolute;
+     right: 25px; 
+     margin-bottom: -25px;    
+}
+
+#section1{
+    position: relative;
+}
+/* Button orientation */
+#section1 .bottom-button {
+    position: absolute;
+    bottom: -35px; /* Adjust bottom position for the bottom margin */
+    right: 10px; /* Adjust right position for the right corner */
+    background-color: #97E533;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+  }
+
+.section1 {
+    margin: 2rem;
+    padding: 50px;
+    /* background-image: url("./image-1.jpeg"); */
+    background-color: aquamarine;
+    background-size: cover; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    text-align: center;
+    margin-top: 20px;
+}
+
+  
+  .section h2 {
+    margin-top: 0;
+  }
